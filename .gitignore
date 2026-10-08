@@ -1,0 +1,23 @@
+# This repository contains release documentation only. Binary files belong in GitHub Releases.
+*.exe
+*.msi
+*.zip
+*.7z
+*.rar
+assets/
+release/
+dist/
+build/
+tmp/
+data/
+.env
+.env.*
+!.env.example
+*.log
+*.db
+*.sqlite
+*.h2.db
+*.jar
+*.pdb
+*.map
+
