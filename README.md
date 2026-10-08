@@ -25,3 +25,5 @@ SoundIsle 是桌面音乐播放器和本地音乐管理工具。
 
 ```powershell
 Get-FileHash .\SoundIsle-0.2.0-preview-win-x64-setup.exe -Algorithm SHA256
+
+如果觉得好用，记得点个star
