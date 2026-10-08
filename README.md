@@ -35,9 +35,7 @@ Get-FileHash .\SoundIsle-0.2.0-preview-win-x64-setup.exe -Algorithm SHA256
 
 也欢迎通过 [Issues](https://github.com/wWYANG666/SoundIsle-/issues) 提交问题或建议，帮助 SoundIsle 做得更好。
 
-<a id="english-version"></a>
-<details>
-<summary>English version</summary>
+## English version
 
 # SoundIsle Downloads
 
@@ -81,5 +79,3 @@ You can also use [Issues](https://github.com/wWYANG666/SoundIsle-/issues) to rep
 ## Source code
 
 The source repository is private and requires access permission: [wWYANG666/SoundIsle](https://github.com/wWYANG666/SoundIsle).
-
-</details>
