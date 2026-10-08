@@ -10,18 +10,6 @@ SoundIsle 是桌面音乐播放器和本地音乐管理工具。
 - [v0.2.0-preview 发布页](https://github.com/wWYANG666/SoundIsle-Downloads/releases/tag/v0.2.0-preview)
 - [所有版本](https://github.com/wWYANG666/SoundIsle-Downloads/releases)
 
-## 当前版本
-
-v0.2.0-preview
-
-请从 GitHub Release 的 Assets 下载：
-
-- 安装包
-- 免安装 ZIP
-- SHA256SUMS.txt
-
-不要下载 GitHub 自动生成的 Source code ZIP 来运行程序。
-
 ## 运行说明
 
 - Windows x64
