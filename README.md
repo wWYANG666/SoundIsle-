@@ -1,5 +1,7 @@
 # SoundIsle 下载页
 
+[English](README.en.md) | 中文
+
 SoundIsle 是桌面音乐播放器和本地音乐管理工具。
 本仓库只提供 Windows 下载文件和发布说明，不包含源代码、用户数据或凭据。
 
@@ -7,8 +9,8 @@ SoundIsle 是桌面音乐播放器和本地音乐管理工具。
 
 当前预览版本：**v0.2.0-preview**
 
-- [v0.2.0-preview 发布页](https://github.com/wWYANG666/SoundIsle-Downloads/releases/tag/v0.2.0-preview)
-- [所有版本](https://github.com/wWYANG666/SoundIsle-Downloads/releases)
+- [v0.2.0-preview 发布页](https://github.com/wWYANG666/SoundIsle-/releases/tag/v0.2.0-preview)
+- [所有版本](https://github.com/wWYANG666/SoundIsle-/releases)
 
 ## 运行说明
 
@@ -25,5 +27,10 @@ SoundIsle 是桌面音乐播放器和本地音乐管理工具。
 
 ```powershell
 Get-FileHash .\SoundIsle-0.2.0-preview-win-x64-setup.exe -Algorithm SHA256
+```
 
-如果觉得好用，记得点个star
+## 支持项目
+
+如果 SoundIsle 对你有帮助，欢迎在右上角点一个 ⭐ Star，支持项目持续更新。
+
+也欢迎通过 [Issues](https://github.com/wWYANG666/SoundIsle-/issues) 提交问题或建议，帮助 SoundIsle 做得更好。
