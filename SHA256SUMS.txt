@@ -1,2 +1,12 @@
-A84F76D6952CE257F5C7B4BB8445FF529CA5D4976D9ED1B994AC781DE9738313  SoundIsle-0.2.0-preview-win-x64-setup.exe
-D0CCF1F6C6BACA95462408878100094B207C3307DDA5C0A1307DE1DF2AE998D9  SoundIsle-0.2.0-preview-win-x64-portable.exe
+37fd7bf0164223033ef989d243cbefc1596324cec5cad20c678a110972851f6b  SoundIsle-0.2.1-preview-linux-amd64.deb
+8e0a71d21518c28de88c1d787b39405baa81623b6c0f52bf3b85db64f79a3466  SoundIsle-0.2.1-preview-linux-arm64.AppImage
+dbfac17546c060fde5bf2a3a2e4d411a8de15fa245311739039b711a9dc9032f  SoundIsle-0.2.1-preview-linux-arm64.deb
+a6142fdf4fd9f858d3c94f9e4df18c18e782748dffe97f50f4a04dd1e5149e3a  SoundIsle-0.2.1-preview-linux-arm64.tar.gz
+729edb49f4bac7daaee247799f36ba70251d9536806e3afa2494f75d104686c8  SoundIsle-0.2.1-preview-linux-x64.tar.gz
+3a51118c6df8c0d379a739690b06f83287e9a3bbbd5ce750f3a60c8c40bd4c44  SoundIsle-0.2.1-preview-linux-x86_64.AppImage
+643433509a7bad60e1bf1b27fb5883c1b0d3b11531a795254e6e892fff611e00  SoundIsle-0.2.1-preview-mac-arm64.dmg
+7754c419b89969b0e4215315c0d68bf98ccdeac33ea1e3004db7361b819f51c4  SoundIsle-0.2.1-preview-mac-arm64.zip
+2d6a811f7ff09e8150839b47b260c5018f5abb41c78f8169955a8a33a9e617d8  SoundIsle-0.2.1-preview-mac-x64.dmg
+f4d1b949ab27bc277fff53fe3ddbd3994de58ae82f3703f84f79bd7ec7db7970  SoundIsle-0.2.1-preview-mac-x64.zip
+72ad65e7d488bcfb820ae9ff41b7cb762a54430a894a1932019273e45ef892ab  SoundIsle-0.2.1-preview-win-x64-portable.exe
+e322b36bf2bab7a78b564252c9683c74eb2f035854d3a247edd5aaf0e655180c  SoundIsle-0.2.1-preview-win-x64-setup.exe

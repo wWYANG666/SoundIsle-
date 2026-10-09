@@ -1,5 +1,13 @@
 # 更新日志
 
+## v0.2.1-preview
+
+- 补齐 macOS Intel / Apple Silicon 的 DMG、ZIP 和 Linux x64 / ARM64 的 AppImage、DEB、tar.gz。
+- 更新同版本 Windows x64 安装及便携 EXE，共 12 个应用下载。
+- 各平台内置原生 Java 17，默认本地账号和后端。
+- 五个平台原生构建、注册、导入、播放和重启测试，以及原有前端/浏览器/Java CI 全部通过。
+- macOS 包未签名与公证，Windows 包未签名；下载校验值随同发布。
+
 ## v0.2.0-preview.20261009
 
 2026-10-09 发布批次，应用内版本仍为 `0.2.0-preview`。

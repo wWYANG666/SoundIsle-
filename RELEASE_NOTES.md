@@ -1,47 +1,40 @@
-# SoundIsle v0.2.0-preview.20261009
+# SoundIsle v0.2.1-preview
 
-2026-10-09 Windows x64 预览发布批次。应用内版本仍显示 `0.2.0-preview`。
+本次补齐跨平台预览下载。从 **Assets** 选择适合系统和处理器的安装包：
 
-## 下载文件
+| 系统 | 架构 | 格式 |
+| --- | --- | --- |
+| Windows | x64 | setup.exe、portable.exe |
+| macOS Intel | x64 | DMG、ZIP |
+| macOS Apple Silicon | ARM64 | DMG、ZIP |
+| Linux | x64 | AppImage、DEB、tar.gz |
+| Linux | ARM64 | AppImage、DEB、tar.gz |
 
-从本 Release 的 **Assets** 下载：
-
-- `SoundIsle-0.2.0-preview-win-x64-setup.exe`：Windows x64 安装包。
-- `SoundIsle-0.2.0-preview-win-x64-portable.exe`：单文件便携启动程序。
-- `SHA256SUMS.txt`：这两个文件的 SHA-256 校验值。
-
-GitHub 自动生成的 `Source code (zip)` / `Source code (tar.gz)` 仅包含下载页文档，不是播放器。原 `v0.2.0-preview` 附件保留。
-
-## 本次更新
-
-- 修复本地音乐文件路径和 URL 编码，包括特殊字符、Windows 盘符、UNC 及 POSIX 路径。
-- 使用系统音乐目录，补充跨平台图标、macOS 菜单和窗口恢复、Linux 托盘兼容处理。
-- 适配代码增加 Windows ARM64、macOS Intel / Apple Silicon、Linux x64 / ARM64 构建目标。
-
-**本次实际下载只有 Windows x64。macOS、Linux 和 Windows ARM64 尚未完成原生构建与验收，没有对应附件。**
+共 12 个应用附件以及 `SHA256SUMS.txt`。Windows ARM64 尚未提供原生下载；GitHub 自动生成的源码归档只包含下载文档。
 
 ## 运行要求
 
-- 默认连接统一账号服务器 `https://music.123936.xyz`，该模式不需要安装 Java。
-- 本次包携带后端 JAR，未内置 JRE。可选本地账号模式需要 Java 17 或更高版本，并通过 `JAVA_HOME` 或 `PATH` 提供 `java`。
-- 用户不需要安装 Node.js 或 Maven。
-- Windows 本地配置保存在 `%APPDATA%\SoundIsle`；本地音频仍保留在用户电脑。
-- 在线音乐平台由用户使用自己的账号连接；默认账号和 AI 服务由服务器管理。
-- 安装包未签名，请核对同一发布批次的校验文件。
+- 每个包内置对应系统/架构的 Java 17，无需另装 Java、Node.js 或 Maven。
+- 默认使用本地账号、本地后端和系统 SoundIsle 配置目录。与上一批次默认云账号的 Windows 包不同。
+- 在线平台账号和 AI 配置由用户自行管理。
+- macOS 包尚无 Developer ID 签名/公证，首次启动可能被 Gatekeeper 拦截；Windows 安装器同样未签名。
+- Linux AppImage 需要 FUSE 支持，也可安装 DEB 或完整解压 tar.gz。
 
-## 验证结果
+## 修复与验证
 
-- Windows x64 目录包：启动、页面、preload 桥接、随机端口 Java 健康检查通过。
-- 真实 WAV 播放、特殊字符文件路径、HTTP 206 范围响应通过。
-- 本地音频和播放相关专项测试：15 项通过。
-- 发布载荷与已验证目录包的 `app.asar` 和后端 JAR 校验值一致。
-- 便携 EXE 已解压并启动。完整自动化验收采用同内容的目录包；NSIS 外壳无法向 Playwright 转发所需的调试输出。
-- 未执行真实安装向导、卸载和覆盖升级测试。其他系统需在对应系统完成验收。
+- 修复 macOS/Linux 本地音乐路径、特殊字符编码与大小写区分，保留 Windows 盘符及 UNC 兼容。
+- 补充跨平台图标、macOS 菜单/窗口恢复、Linux 托盘兼容。
+- 保留源码仓库内置 Java 与本地账号能力，生成各架构原生 runtime。
+- 五个原生 GitHub runner 均构建成功，并通过页面/桥接、内置 Java、注册、导入、WAV 播放、206 范围响应、退出重登、重启数据保留与后端退出测试。
+- 原有前端/浏览器/Java CI 全部通过。
+- 构建源码提交：`52b35a44f4fc43c7d0652aa17d9c5b531e9b7970`。
+- 私有源码仓库原生构建运行编号：`37879303500`，普通 CI：`37879303450`。
 
-## SHA-256
+下载归档与 GitHub Actions SHA-256 一致，各发布附件也核对 GitHub 返回摘要。OS 安装、卸载、Gatekeeper 和实际扬声器发声不在 CI 验收范围内。旧版 Release 保留。
 
-```text
-A84F76D6952CE257F5C7B4BB8445FF529CA5D4976D9ED1B994AC781DE9738313  SoundIsle-0.2.0-preview-win-x64-setup.exe
-D0CCF1F6C6BACA95462408878100094B207C3307DDA5C0A1307DE1DF2AE998D9  SoundIsle-0.2.0-preview-win-x64-portable.exe
-```
+## English
+
+Native Windows x64, macOS Intel/Apple Silicon and Linux x64/ARM64 downloads are included. Every package bundles a native Java 17 runtime and uses local accounts/backend by default. All five targets passed native builds and application tests. Check the Assets against SHA256SUMS.txt.
+
+macOS packages are unsigned and not notarized; Windows packages are unsigned. OS installation/uninstall and first-launch Gatekeeper checks remain separate acceptance steps.
 
