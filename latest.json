@@ -1,126 +1,126 @@
 {
   "schemaVersion": 1,
-  "version": "0.2.3-preview",
-  "publishedAt": "2026-10-10T04:41:38Z",
-  "releaseUrl": "https://github.com/wWYANG666/SoundIsle-/releases/tag/v0.2.3-preview",
+  "version": "0.2.4-preview",
+  "publishedAt": "2026-10-10T05:36:00Z",
+  "releaseUrl": "https://github.com/wWYANG666/SoundIsle-/releases/tag/v0.2.4-preview",
   "notes": [
+    "账号页只读显示登录用户名；删除新用户名、改名确认密码／二次验证码及提交按钮。",
+    "昵称仍在“个人资料”中编辑，可以重复；修改昵称不改变登录名、账号 ID、会话和音乐数据。",
+    "旧改名 API 返回 403，后端实体用户名字段不可更新，旧客户端也无法继续改名。",
+    "删除仅用于改名的 GitHub 身份确认授权，保留普通 GitHub 登录／绑定。",
     "显示 GitHub 官方下载地址；手动刷新检查，或在启动时检查。",
     "下载匹配当前系统、架构和安装方式的更新包，显示进度，可取消、重试。",
     "下载大小与 SHA-256 必须匹配才显示可用；跨重启恢复下载记录，打开前再次校验。",
-    "Windows 安装版确认后退出并打开安装器；便携版和 macOS／Linux 提供更新文件和目录入口。",
-    "启动检查可关闭，不自动下载或安装。旧版首次需手动升级到此版本，后续可在程序内检测和下载。",
-    "邮箱验证码注册，GitHub 注册／登录；不接入 QQ 账号注册登录。",
-    "新增个人中心：头像、昵称、简介、用户名及账号安全。",
-    "修改密码只能通过当前已验证邮箱收到的验证码，其他旧会话随后失效。"
+    "Windows 安装版确认后退出并打开安装器；便携版和 macOS／Linux 提供更新文件和目录入口。"
   ],
   "assets": [
     {
       "platform": "win32",
       "arch": "x64",
       "kind": "setup",
-      "name": "SoundIsle-0.2.3-preview-win-x64-setup.exe",
-      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.3-preview/SoundIsle-0.2.3-preview-win-x64-setup.exe",
-      "sha256": "e9203a78177ad86524986946b2e996248f3356311861b1e257466460e616f9c8",
-      "size": 205407569
+      "name": "SoundIsle-0.2.4-preview-win-x64-setup.exe",
+      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.4-preview/SoundIsle-0.2.4-preview-win-x64-setup.exe",
+      "sha256": "614fae336c695a309845556317791661d824ef6f2f10bfb9446dac677cb2d5d4",
+      "size": 205403350
     },
     {
       "platform": "win32",
       "arch": "x64",
       "kind": "portable",
-      "name": "SoundIsle-0.2.3-preview-win-x64-portable.exe",
-      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.3-preview/SoundIsle-0.2.3-preview-win-x64-portable.exe",
-      "sha256": "fd0ef0ee4de5cd652532d6c3c019bbbc2f7a73a64c1e64f2b7aac8282cd57102",
-      "size": 205204337
+      "name": "SoundIsle-0.2.4-preview-win-x64-portable.exe",
+      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.4-preview/SoundIsle-0.2.4-preview-win-x64-portable.exe",
+      "sha256": "43663aaa1f1b2ade1ccdb4161da2a187cadce99dea88e8a932821a6a69f90cf5",
+      "size": 205200108
     },
     {
       "platform": "darwin",
       "arch": "x64",
       "kind": "dmg",
-      "name": "SoundIsle-0.2.3-preview-mac-x64.dmg",
-      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.3-preview/SoundIsle-0.2.3-preview-mac-x64.dmg",
-      "sha256": "8369d3dbce381f009ffc5ef7760edb087df5f60b39616b594af73a6687ed9901",
-      "size": 237234370
+      "name": "SoundIsle-0.2.4-preview-mac-x64.dmg",
+      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.4-preview/SoundIsle-0.2.4-preview-mac-x64.dmg",
+      "sha256": "a58737aa982c0581bcf88bceb1b7a2d68b0d29da975ef9bfe01b19d87f43fae1",
+      "size": 237221336
     },
     {
       "platform": "darwin",
       "arch": "x64",
       "kind": "zip",
-      "name": "SoundIsle-0.2.3-preview-mac-x64.zip",
-      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.3-preview/SoundIsle-0.2.3-preview-mac-x64.zip",
-      "sha256": "e4be46e7a14df02cf09ecf4f87d350a79612b64e513bf4914318c6747e385ce2",
-      "size": 232576425
+      "name": "SoundIsle-0.2.4-preview-mac-x64.zip",
+      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.4-preview/SoundIsle-0.2.4-preview-mac-x64.zip",
+      "sha256": "ef1df5f90a10ff9e7102fd6731eb31e885cb5c911859aacdb110793024350994",
+      "size": 232573684
     },
     {
       "platform": "darwin",
       "arch": "arm64",
       "kind": "dmg",
-      "name": "SoundIsle-0.2.3-preview-mac-arm64.dmg",
-      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.3-preview/SoundIsle-0.2.3-preview-mac-arm64.dmg",
-      "sha256": "34c02db0672de9f66b6f7ce4bc66cfc1e66a40162349f4e4bdd7b8fdd41369b7",
-      "size": 230996458
+      "name": "SoundIsle-0.2.4-preview-mac-arm64.dmg",
+      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.4-preview/SoundIsle-0.2.4-preview-mac-arm64.dmg",
+      "sha256": "fafb412f96a1b048cbfab3a34b70a46045793fd27362d1a438c6d64c8601c952",
+      "size": 231016759
     },
     {
       "platform": "darwin",
       "arch": "arm64",
       "kind": "zip",
-      "name": "SoundIsle-0.2.3-preview-mac-arm64.zip",
-      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.3-preview/SoundIsle-0.2.3-preview-mac-arm64.zip",
-      "sha256": "fa446c8967eb15c6e8843e47445022db892e93433cfc89db9080dd42ccd92cec",
-      "size": 226400748
+      "name": "SoundIsle-0.2.4-preview-mac-arm64.zip",
+      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.4-preview/SoundIsle-0.2.4-preview-mac-arm64.zip",
+      "sha256": "72a1226e26d3ad07590ff3eeb36e943fb36af5087dff4c8c9d67ec22b1631e22",
+      "size": 226397810
     },
     {
       "platform": "linux",
       "arch": "x64",
       "kind": "deb",
-      "name": "SoundIsle-0.2.3-preview-linux-amd64.deb",
-      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.3-preview/SoundIsle-0.2.3-preview-linux-amd64.deb",
-      "sha256": "7bb855c51bb49ee93ee7ffc8f6a3776abed3050a0a1d4abda48634714c19a229",
-      "size": 212728380
+      "name": "SoundIsle-0.2.4-preview-linux-amd64.deb",
+      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.4-preview/SoundIsle-0.2.4-preview-linux-amd64.deb",
+      "sha256": "1cb720d7991a74057c30f275cb822f6d069eeed1e887efedd0bf066de05ea512",
+      "size": 212724260
     },
     {
       "platform": "linux",
       "arch": "x64",
       "kind": "appimage",
-      "name": "SoundIsle-0.2.3-preview-linux-x86_64.AppImage",
-      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.3-preview/SoundIsle-0.2.3-preview-linux-x86_64.AppImage",
-      "sha256": "3be59ce59954fa6442f2400fcff7bfa759987f177313392959a17ea0ef13478f",
-      "size": 244322562
+      "name": "SoundIsle-0.2.4-preview-linux-x86_64.AppImage",
+      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.4-preview/SoundIsle-0.2.4-preview-linux-x86_64.AppImage",
+      "sha256": "d7fef43efe84718b03eb2f410b146d64585d5bf4a65fa55a8d397d8c1ec046da",
+      "size": 244323000
     },
     {
       "platform": "linux",
       "arch": "x64",
       "kind": "tar",
-      "name": "SoundIsle-0.2.3-preview-linux-x64.tar.gz",
-      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.3-preview/SoundIsle-0.2.3-preview-linux-x64.tar.gz",
-      "sha256": "a6ea8c9bb2bafa3e9387a9e1bc92aa733959324874d3e6c4ca02e128c8b85fac",
-      "size": 237115773
+      "name": "SoundIsle-0.2.4-preview-linux-x64.tar.gz",
+      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.4-preview/SoundIsle-0.2.4-preview-linux-x64.tar.gz",
+      "sha256": "d71c6afa100f69eb94209e3af6d26bbf62ffc2cb6008b1b082b3f1750dd54330",
+      "size": 237113111
     },
     {
       "platform": "linux",
       "arch": "arm64",
       "kind": "deb",
-      "name": "SoundIsle-0.2.3-preview-linux-arm64.deb",
-      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.3-preview/SoundIsle-0.2.3-preview-linux-arm64.deb",
-      "sha256": "41ded2d72e8ebc830d8c14ff9c6769f1bd521a48e241991b76794e7b8814d3d7",
-      "size": 206736644
+      "name": "SoundIsle-0.2.4-preview-linux-arm64.deb",
+      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.4-preview/SoundIsle-0.2.4-preview-linux-arm64.deb",
+      "sha256": "17959da4ab77205cab0f977eb12fd80bcaecd42549001a6f6ec47846d4a8d883",
+      "size": 206731884
     },
     {
       "platform": "linux",
       "arch": "arm64",
       "kind": "appimage",
-      "name": "SoundIsle-0.2.3-preview-linux-arm64.AppImage",
-      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.3-preview/SoundIsle-0.2.3-preview-linux-arm64.AppImage",
-      "sha256": "992aa2b7dd145942956b7b2e961123f7e11d58cf3ae9cbcb3c71b53e0713716b",
-      "size": 243762830
+      "name": "SoundIsle-0.2.4-preview-linux-arm64.AppImage",
+      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.4-preview/SoundIsle-0.2.4-preview-linux-arm64.AppImage",
+      "sha256": "50636bd679d440331a3ab8d7bd464e1a7694687d6b8ee915f39ed03613e8c633",
+      "size": 243759267
     },
     {
       "platform": "linux",
       "arch": "arm64",
       "kind": "tar",
-      "name": "SoundIsle-0.2.3-preview-linux-arm64.tar.gz",
-      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.3-preview/SoundIsle-0.2.3-preview-linux-arm64.tar.gz",
-      "sha256": "900229df433e51afd3dc0d4738eb878a2e09ac7e83233469a233cba5de8fdb29",
-      "size": 236248538
+      "name": "SoundIsle-0.2.4-preview-linux-arm64.tar.gz",
+      "url": "https://github.com/wWYANG666/SoundIsle-/releases/download/v0.2.4-preview/SoundIsle-0.2.4-preview-linux-arm64.tar.gz",
+      "sha256": "f277d352546015e1e1e7988c3cffa0cd1c673daeaf4c0d2dad04d085f79d7c9a",
+      "size": 236243812
     }
   ]
 }
