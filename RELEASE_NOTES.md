@@ -1,6 +1,16 @@
-# SoundIsle v0.2.1-preview
+# SoundIsle v0.2.2-preview
 
-本次补齐跨平台预览下载。从 **Assets** 选择适合系统和处理器的安装包：
+本批次将下载版本同步到网站的账号与个人中心功能。
+
+## 更新
+
+- 邮箱验证码注册，GitHub 注册／登录；不接入 QQ 账号注册登录。
+- 新增个人中心：头像、昵称、简介、用户名及账号安全。
+- 修改密码只能通过当前已验证邮箱收到的验证码，其他旧会话随后失效。
+- 支持 PNG、JPEG、WebP 头像，解决实际是 WebP 却命名为 JPG 的图片上传失败；失败后保留资料草稿。
+- 下载默认连接 `https://music.123936.xyz`，使用与网站相同的账号。旧本地账号不自动合并，历史下载保留。
+
+## 下载
 
 | 系统 | 架构 | 格式 |
 | --- | --- | --- |
@@ -10,31 +20,18 @@
 | Linux | x64 | AppImage、DEB、tar.gz |
 | Linux | ARM64 | AppImage、DEB、tar.gz |
 
-共 12 个应用附件以及 `SHA256SUMS.txt`。Windows ARM64 尚未提供原生下载；GitHub 自动生成的源码归档只包含下载文档。
+各包内置对应架构的 Java 17，无需另装 Java、Node.js 或 Maven。本地后端可通过 `MUSICFLOW_ACCOUNT_MODE=local` 启用，邮箱注册／改密需配置自己的 SMTP。本机音乐文件留在设备上。
 
-## 运行要求
+共 12 个应用附件与 `SHA256SUMS.txt`，请核对 SHA-256。Windows ARM64 尚无原生下载；自动源码归档只包含文档，应用源码仓库保持私有。
 
-- 每个包内置对应系统/架构的 Java 17，无需另装 Java、Node.js 或 Maven。
-- 默认使用本地账号、本地后端和系统 SoundIsle 配置目录。与上一批次默认云账号的 Windows 包不同。
-- 在线平台账号和 AI 配置由用户自行管理。
-- macOS 包尚无 Developer ID 签名/公证，首次启动可能被 Gatekeeper 拦截；Windows 安装器同样未签名。
-- Linux AppImage 需要 FUSE 支持，也可安装 DEB 或完整解压 tar.gz。
+## 验证范围
 
-## 修复与验证
+原生包使用隔离账号验证启动、内置 Java、登录、导入、播放、退出重登、重启持久化及后端退出。邮箱／GitHub、个人资料和改密流程有独立前端／浏览器／Java／实际 TLS SMTP fixture 测试。测试不向生产用户发信或修改其资料。
 
-- 修复 macOS/Linux 本地音乐路径、特殊字符编码与大小写区分，保留 Windows 盘符及 UNC 兼容。
-- 补充跨平台图标、macOS 菜单/窗口恢复、Linux 托盘兼容。
-- 保留源码仓库内置 Java 与本地账号能力，生成各架构原生 runtime。
-- 五个原生 GitHub runner 均构建成功，并通过页面/桥接、内置 Java、注册、导入、WAV 播放、206 范围响应、退出重登、重启数据保留与后端退出测试。
-- 原有前端/浏览器/Java CI 全部通过。
-- 构建源码提交：`52b35a44f4fc43c7d0652aa17d9c5b531e9b7970`。
-- 私有源码仓库原生构建运行编号：`37879303500`，普通 CI：`37879303450`。
+构建源码提交：`70296b741326568abba3da29843c0153bface25c`。普通 CI `38018791756` 与五平台原生构建 `38018791687` 全部通过。本地源码验证为 Java 111/111、前端 140/140、生产构建与 lint 通过。
 
-下载归档与 GitHub Actions SHA-256 一致，各发布附件也核对 GitHub 返回摘要。OS 安装、卸载、Gatekeeper 和实际扬声器发声不在 CI 验收范围内。旧版 Release 保留。
+macOS 未签名／公证、Windows 未签名。OS 安装／卸载、Gatekeeper 和实际扬声器验收仍需在用户设备完成。Linux AppImage 需要 FUSE，也可使用 DEB 或完整解压 tar.gz。
 
 ## English
 
-Native Windows x64, macOS Intel/Apple Silicon and Linux x64/ARM64 downloads are included. Every package bundles a native Java 17 runtime and uses local accounts/backend by default. All five targets passed native builds and application tests. Check the Assets against SHA256SUMS.txt.
-
-macOS packages are unsigned and not notarized; Windows packages are unsigned. OS installation/uninstall and first-launch Gatekeeper checks remain separate acceptance steps.
-
+This release syncs email/GitHub accounts, profiles, email-code-only password changes and WebP avatars with the website. Packages use hosted accounts by default, include native Java 17 and preserve a configurable local backend. Existing local accounts are separate, and previous downloads remain available. Check SHA256SUMS.txt before running a package.

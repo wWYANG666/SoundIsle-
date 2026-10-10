@@ -1,5 +1,14 @@
 # 更新日志
 
+## v0.2.2-preview
+
+- 同步网站和桌面版本的邮箱／GitHub 注册登录，默认连接统一账号服务器。
+- 新增个人中心：头像、昵称、简介、用户名和账号安全。
+- 修改密码必须使用当前已验证邮箱收到的专用验证码。
+- 支持 WebP 头像及扩展名不匹配的下载图片，上传失败保留资料草稿。
+- 保留 Windows x64、macOS x64／ARM64、Linux x64／ARM64 和内置 Java 17。
+- 原有版本和下载附件继续保留。
+
 ## v0.2.1-preview
 
 - 补齐 macOS Intel / Apple Silicon 的 DMG、ZIP 和 Linux x64 / ARM64 的 AppImage、DEB、tar.gz。
